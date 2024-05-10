@@ -1,0 +1,75 @@
+/*Estilos de la barra de navegacion*/
+
+
+body {  /*Formateamos el cuerpo y asiganamos una fuente*/
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a{ /*Quitamos decoracion a todas las etiquetas de ancla*/
+    text-decoration: none;
+     cursor: pointer; /*Ponemos la manito al pasar el cursor encima*/
+}
+
+header{    /*Hacemos que el header ocupe toda la horizontal y asignamos una altura*/
+    width: 100%;
+    height: 60px;
+}
+
+header nav{ 
+    display: flex;
+    justify-content: flex-end; /* ajustamos la barra de navegaion a la derecha*/
+}
+
+/**/
+
+header nav .nav-right-section{ /*Especificamos y modificamos la lista y le damos un ancho y la altura auto porque le asignamos una altura al padre que es el header*/
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none; /*Quitamos la decoracion de los items de la lista*/
+    justify-content: center; /*Justificado al centro verticalmente*/
+    align-items: center; /*Centramos horizontalmente */
+
+}
+nav .nav-right-section a { /*Seleccionamos especificamente cada item de la lista*/
+    margin-right: 10px; /*Agregamos espaciado entre cada item*/
+    color: #000000;
+    
+}
+
+nav .nav-right-section .menu-icon{ /*Seleccionamos el item de menu para ponerle el icono*/
+    background-image: url('https://static.thenounproject.com/png/756729-200.png'); /*Cargamos el icono desde una url*/
+    background-repeat: no-repeat; /*Evitamos que se repita*/
+    background-position: center; /*Centramos*/
+    background-size: contain; /*Para que este dek tamano del contenedor*/
+    width: 25px;
+    height: 25px;
+}
+
+nav .nav-right-section img { /*Seleccionamos la imagen de perfil*/
+    border-radius: 50%; /*Redondeamos la imagen*/
+    margin-left: 10px;/*Separamos los iconos*/
+}
+
+/*Estilos de ;a parte principal*/
+/**/
+
+main{
+    margin-top: 150px; /*Le damos altura*/
+    text-align: center; /*centramos*/
+}
+
+main .main-logo{
+    width: 530px; /*Le damos el ancho al logo*/
+    margin: 0 auto; /*El auto es para centralo*/
+    margin-bottom: 35px;
+}
+
+main .main-logo img{ /*Seleccionamos la imagen y ajustamos su tamano*/
+    width: 272px;
+    height: 92px;
+}
